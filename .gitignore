@@ -3,3 +3,5 @@
 
 # Production Build
 /out
+# .next Folder ignore
+/.next

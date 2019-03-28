@@ -35,7 +35,7 @@ class NavBar extends Component {
                     <div >
                         <MenuList>
                             <MenuItem>
-                                <Link href='/Home'>
+                                <Link href='/Home' as='/'>
                                     <a style={{ textDecoration: 'none' }}>Home</a>
                                 </Link>
                             </MenuItem>

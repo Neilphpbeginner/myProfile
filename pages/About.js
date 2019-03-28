@@ -19,7 +19,7 @@ class About extends Component {
         return (
             <Grid className={classes.root}>
                 <MetaTags>
-                    <title>Neil Lemmer's Web Portfolio/About</title>
+                    <title>About</title>
                 </MetaTags>
                 <NavBar />
                 <Grid className={classes.content}>
@@ -30,7 +30,6 @@ class About extends Component {
                     <Typography variant='headline' color='primary' className={classes.cvHeading}>
                         Johannesburg GAUTENG
                             </Typography>
-                    <br />
                     <div className={classes.cvHeading}>
                         < a target='_black' href='https://github.com/Neilphpbeginner?tab=repositories'>
                             <SvgIcon color='primary' className={classes.spaceBetweenIcons}>
@@ -63,13 +62,13 @@ class About extends Component {
                             </SvgIcon>
                         </a>
                     </div>
-                    <div style={{ backgroundColor: bgColor.primary, borderRadius: 25, margin: 40 }}>
+                    <div style={{ backgroundColor: bgColor.primary, borderRadius: 25, margin: 'auto' }}>
                         <Typography variant='h5' color='secondary' className={classes.cvHeading}>
                             Software Engineering
                         </Typography>
                     </div>
                     <div>
-                        <List className={classes.listItems}>
+                        <Typography variant='h6' className={classes.listItems}>
                             <ListItem>
                                 Hyperiondev graduate offering a strong foundation in software engineering and programming principles across multiple platforms.
                             </ListItem>
@@ -79,14 +78,14 @@ class About extends Component {
                             <ListItem>
                                 Quickly learn and master new technologies; successful working in both team and self-directed settings.
                             </ListItem>
-                        </List>
+                        </Typography>
                     </div>
-                    <div style={{ backgroundColor: bgColor.primary, borderRadius: 25, margin: 40 }}>
+                    <div style={{ backgroundColor: bgColor.primary, borderRadius: 25, margin: 'auto' }}>
                         <Typography variant='h5' color='secondary' className={classes.cvHeading}>
                             Education
                         </Typography>
                     </div>
-                    <List className={classes.listItems}>
+                    <Typography variant='h6' className={classes.listItems}>
                         <ListItem>
                             IBM eServer certified specialist AIX –  System Administrator (2003)
                             </ListItem>
@@ -114,24 +113,22 @@ class About extends Component {
                         <ListItem>
                             Data Science, Algorithms and Advanced Software Engineering
                         </ListItem>
-                    </List>
-                    <div style={{ backgroundColor: bgColor.primary, borderRadius: 25, margin: 40 }}>
+                    </Typography>
+                    <div style={{ backgroundColor: bgColor.primary, borderRadius: 25, margin: 'auto' }}>
                         <Typography variant='h5' color='secondary' className={classes.cvHeading}>
                             Work Experience
                         </Typography>
                     </div>
-                    <div>
-                        <Typography variant='inherit' className={classes.listItems}>
+                    <Typography variant='h6' className={classes.listItems}>
+                        <ListItem>
                             Babcock Ntuthuko Generations (Head Office, Bedfordview)
+                                <br />
                             Administrator Site, July 2007 to Present
-                        </Typography>
-                    </div>
-
-
+                        </ListItem>
+                    </Typography>
                 </Grid>
             </Grid>
         );
-
     }
 }
 

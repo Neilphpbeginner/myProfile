@@ -17,7 +17,8 @@ export const styles = theme => ({
     content: {
         flexGrow: 1,
         paddingLeft: 20,
-        paddingTop: 80,
+        paddingTop: 65,
+        margin: 'auto'
     },
     toolbar: theme.mixins.toolbar,
     cvHeading: {
@@ -31,9 +32,11 @@ export const styles = theme => ({
         margin: 5
     },
     spaceBetweenIcons: {
-        padding: 7
+        padding: 7,
+        margin: 'auto'
     },
     listItems: {
-        paddingLeft: 40
+        margin: 'auto',
+        padding: 20
     }
 });

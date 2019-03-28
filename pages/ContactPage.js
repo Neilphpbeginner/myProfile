@@ -12,7 +12,7 @@ class ContactPage extends Component {
         return (
             <Grid className={classes.root}>
                 <MetaTags>
-                    <title>Neil Lemmer's Web Portfolio</title>
+                    <title>Contact Me</title>
                 </MetaTags>
                 <NavBar />
                 <Grid className={classes.content}>
