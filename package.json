@@ -1,0 +1,28 @@
+{
+    "name": "MyProfile",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "export": "next export"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@material-ui/core": "^3.9.2",
+        "next": "^8.0.3",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
+        "react-meta-tags": "^0.7.4",
+        "react-router-dom": "^5.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^5.15.3",
+        "jshint": "^2.10.2",
+        "prettier": "1.16.4"
+    }
+}
