@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { styles } from "./components/styles";
+
 import Proptypes from "prop-types";
 import { Grid, Typography } from "@material-ui/core";
 import MetaTags from "react-meta-tags";
@@ -12,7 +13,8 @@ class Home extends Component {
         return (
             <Grid className={classes.root}>
                 <MetaTags>
-                    <title>Neil Lemmer's Web Portfolio</title>
+                    <title>About</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
                 </MetaTags>
                 <NavBar />
                 <Grid className={classes.content}>

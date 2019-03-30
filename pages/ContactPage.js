@@ -4,7 +4,8 @@ import { withStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
 import NavBar from "./components/NavBar";
 import { Grid, Typography } from "@material-ui/core";
-import MetaTags from "react-meta-tags";
+import MetaTags from 'react-meta-tags';
+
 
 class ContactPage extends Component {
     render() {
@@ -12,7 +13,8 @@ class ContactPage extends Component {
         return (
             <Grid className={classes.root}>
                 <MetaTags>
-                    <title>Contact Me</title>
+                    <title>About</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
                 </MetaTags>
                 <NavBar />
                 <Grid className={classes.content}>

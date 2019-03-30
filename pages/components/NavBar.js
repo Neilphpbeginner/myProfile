@@ -3,9 +3,11 @@ import { styles } from './styles';
 import { withStyles } from "@material-ui/core/styles";
 import { AppBar, Toolbar, Typography, SvgIcon, Drawer, MenuItem, MenuList } from '@material-ui/core';
 import Icon from './Icon';
+
+
+import Head from 'next/head';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
-import { green } from '@material-ui/core/colors';
 
 class NavBar extends Component {
     render() {
@@ -35,18 +37,18 @@ class NavBar extends Component {
                     <div >
                         <MenuList>
                             <MenuItem>
-                                <Link href='/Home' as='/'>
-                                    <a style={{ textDecoration: 'none' }}>Home</a>
+                                <Link prefetch href='/Home'>
+                                    <a style={{ textDecoration: 'none', width: 120, }}>Home</a>
                                 </Link>
                             </MenuItem>
                             <MenuItem>
-                                <Link href='/About'>
-                                    <a style={{ textDecoration: 'none' }}>About</a>
+                                <Link prefetch href='/About'>
+                                    <a style={{ textDecoration: 'none', width: 120 }}>About</a>
                                 </Link>
                             </MenuItem>
                             <MenuItem>
-                                <Link href='/ContactPage'>
-                                    <a style={{ textDecoration: 'none' }}>Contact Me</a>
+                                <Link prefetch href='/ContactPage'>
+                                    <a style={{ textDecoration: 'none', width: 120 }}>Contact Me</a>
                                 </Link>
                             </MenuItem>
                         </MenuList>

@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core';
 import theme from "./components/Theme";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import { styles } from './components/styles';
+import Head from 'next/head';
 
 class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {

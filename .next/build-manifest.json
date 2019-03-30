@@ -11,15 +11,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/ContactPage": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/Home": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/": [
+    "/About": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

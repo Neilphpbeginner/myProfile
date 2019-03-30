@@ -20,6 +20,7 @@ class About extends Component {
             <Grid className={classes.root}>
                 <MetaTags>
                     <title>About</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
                 </MetaTags>
                 <NavBar />
                 <Grid className={classes.content}>
