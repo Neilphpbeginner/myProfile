@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { styles } from './styles';
 import { withStyles } from "@material-ui/core/styles";
-import { AppBar, Toolbar, Typography, SvgIcon, Drawer, MenuItem, MenuList } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, SvgIcon, Drawer, MenuItem, MenuList, Button } from '@material-ui/core';
 import Icon from './Icon';
-
-
-import Head from 'next/head';
 import { withRouter } from 'next/router';
-import Link from 'next/link';
+import Link from 'next/link'
 
 class NavBar extends Component {
+
+
     render() {
         const { classes } = this.props;
         return (
@@ -34,23 +33,23 @@ class NavBar extends Component {
                     }}
                 >
                     <div className={classes.toolbar} />
-                    <div >
+                    <div className={classes.menuItem}>
                         <MenuList>
-                            <MenuItem>
+                            <Button variant='outlined' color='primary'>
                                 <Link prefetch href='/Home'>
-                                    <a style={{ textDecoration: 'none', width: 120, }}>Home</a>
+                                    <a style={{ textDecoration: 'none', width: 96 }}>Home</a>
                                 </Link>
-                            </MenuItem>
-                            <MenuItem>
-                                <Link prefetch href='/About'>
-                                    <a style={{ textDecoration: 'none', width: 120 }}>About</a>
+                            </Button>
+                            <Button variant='outlined' color='primary'>
+                                <Link shallow prefetch href='/About'>
+                                    <a style={{ textDecoration: 'none', width: 96 }}>About</a>
                                 </Link>
-                            </MenuItem>
-                            <MenuItem>
-                                <Link prefetch href='/ContactPage'>
-                                    <a style={{ textDecoration: 'none', width: 120 }}>Contact Me</a>
+                            </Button>
+                            <Button variant='outlined' color='primary'>
+                                <Link shallow prefetch href='/ContactPage'>
+                                    <a style={{ textDecoration: 'none', width: 96 }}>Contact Me</a>
                                 </Link>
-                            </MenuItem>
+                            </Button>
                         </MenuList>
                     </div>
                 </Drawer>

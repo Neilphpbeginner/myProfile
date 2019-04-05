@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import NavBar from "./components/NavBar";
 import Icon from './components/Icon';
 import { Typography, SvgIcon, List, ListItem, Grid } from "@material-ui/core";
-import MetaTags from "react-meta-tags";
+import Head from 'next/head'
 
 const bgColor = {
     primary: '#103452',
@@ -18,17 +18,18 @@ class About extends Component {
         const { classes } = this.props;
         return (
             <Grid className={classes.root}>
-                <MetaTags>
-                    <title>About</title>
+                <Head>
+                    <title>About Page</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-                </MetaTags>
+                    <meta name="description" content="Neil Lemmer's Web Portfolio About Page"></meta>
+                    <meta name="author" content="Neil Lemmer"></meta>
+                </Head>
                 <NavBar />
                 <Grid className={classes.content}>
-                    <Typography variant='display1' color='primary' className={classes.cvHeading}>
+                    <Typography variant='h4' color='primary' className={classes.cvHeading}>
                         Neil Christian Lemmer
                             </Typography>
-                    <br />
-                    <Typography variant='headline' color='primary' className={classes.cvHeading}>
+                    <Typography variant='h5' color='primary' className={classes.cvHeading}>
                         Johannesburg GAUTENG
                             </Typography>
                     <div className={classes.cvHeading}>
@@ -63,13 +64,14 @@ class About extends Component {
                             </SvgIcon>
                         </a>
                     </div>
+
                     <div style={{ backgroundColor: bgColor.primary, borderRadius: 25, margin: 'auto' }}>
                         <Typography variant='h5' color='secondary' className={classes.cvHeading}>
                             Software Engineering
                         </Typography>
                     </div>
                     <div>
-                        <Typography variant='h6' className={classes.listItems}>
+                        <Typography variant='subtitle1' className={classes.listItems}>
                             <ListItem>
                                 Hyperiondev graduate offering a strong foundation in software engineering and programming principles across multiple platforms.
                             </ListItem>
@@ -86,41 +88,46 @@ class About extends Component {
                             Education
                         </Typography>
                     </div>
-                    <Typography variant='h6' className={classes.listItems}>
-                        <ListItem>
-                            IBM eServer certified specialist AIX –  System Administrator (2003)
+                    <div>
+                        <Typography variant='subtitle1' className={classes.listItems}>
+                            <ListItem>
+                                IBM eServer certified specialist AIX –  System Administrator (2003)
                             </ListItem>
-                        <ListItem>
-                            IBM eServer certified specialist AIX – System Support (2003)
+                            <ListItem>
+                                IBM eServer certified specialist AIX – System Support (2003)
                             </ListItem>
-                        <ListItem>
-                            P690 Technical Support(2003)Information Security
+                            <ListItem>
+                                Oracle Certified Associate, Java SE8 Programmer (2016)
+                            </ListItem>
+                            <ListItem>
+                                Oracle Certified Associate, Java SE8 Programmer (2016)
                         </ListItem>
-                        <ListItem>
-                            Oracle Certified Associate, Java SE8 Programmer (2016)
+                            <ListItem>
+                                70-480:  Programming HTML5 with JavaScript and CSS3 (2016)Enterprise Software Overview
                         </ListItem>
-                        <ListItem>
-                            70-480:  Programming HTML5 with JavaScript and CSS3 (2016)Enterprise Software Overview
+                            <ListItem>
+                                PHP Programmer (2017)
                         </ListItem>
-                        <ListItem>
-                            PHP Programmer (2017)
+                            <ListItem>
+                                Introduction to Programming (Python)
                         </ListItem>
-                        <ListItem>
-                            Introduction to Programming (Python)
+                            <ListItem>
+                                Introduction to Software Engineering
                         </ListItem>
-                        <ListItem>
-                            Introduction to Software Engineering
+                            <ListItem>
+                                Data Science, Algorithms and Advanced Software Engineering
                         </ListItem>
-                        <ListItem>
-                            Data Science, Algorithms and Advanced Software Engineering
+                            <ListItem>
+                                P690 Technical Support (2003) Information Security
                         </ListItem>
-                    </Typography>
+                        </Typography>
+                    </div>
                     <div style={{ backgroundColor: bgColor.primary, borderRadius: 25, margin: 'auto' }}>
                         <Typography variant='h5' color='secondary' className={classes.cvHeading}>
                             Work Experience
                         </Typography>
                     </div>
-                    <Typography variant='h6' className={classes.listItems}>
+                    <Typography variant='subtitle1' className={classes.listItems}>
                         <ListItem>
                             Babcock Ntuthuko Generations (Head Office, Bedfordview)
                                 <br />

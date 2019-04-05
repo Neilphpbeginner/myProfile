@@ -56703,7 +56703,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
-var drawerWidth = 100;
+var drawerWidth = 130;
 var styles = function styles(theme) {
   return {
     root: {
@@ -56743,6 +56743,17 @@ var styles = function styles(theme) {
     listItems: {
       margin: 'auto',
       padding: 20
+    },
+    menuItem: {
+      textDecoration: 'none',
+      display: 'inline-block',
+      width: drawerWidth
+    },
+    card: {
+      maxWidth: 500
+    },
+    media: {
+      height: 350
     }
   };
 };

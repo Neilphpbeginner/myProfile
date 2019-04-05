@@ -1,4 +1,4 @@
-const drawerWidth = 100;
+const drawerWidth = 130;
 
 export const styles = theme => ({
     root: {
@@ -38,5 +38,16 @@ export const styles = theme => ({
     listItems: {
         margin: 'auto',
         padding: 20
-    }
+    },
+    menuItem: {
+        textDecoration: 'none',
+        display: 'inline-block',
+        width: drawerWidth
+    },
+    card: {
+        maxWidth: 500,
+    },
+    media: {
+        height: 350,
+    },
 });
